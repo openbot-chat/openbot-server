@@ -1,0 +1,116 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+      "version": "1.0.0",
+      "title": "Jaguar 招聘平台",
+      "description": "RESTful API for Jaguar"
+  },
+  "servers": [
+      {
+          "description": "Production Server",
+          "url": "https://api.jaguarjob.com/chance/v1"
+      }
+  ],
+  "components": {
+      "schemas": {
+          "Chance": {
+              "properties": {
+                  "id": {
+                      "type": "string",
+                      "example": "231040486691880961",
+                      "description": "ID"
+                  },
+                  "description": {
+                      "type": "string",
+                      "description": "职位描述"
+                  },
+                  "labelList": {
+                    "type": "array",
+                    "description": "标签",
+                    "items": {
+                      "$ref": "#/components/schemas/Label"
+                    }
+                  }
+              }
+          },
+          "Label": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string",
+                "description": "文本描述"
+              }
+            }
+          },
+          "ChangeResponse": {
+            "type": "object",
+            "properties": {
+              "result": {
+                "description": "职位列表",
+                "type": "array",
+                "items": {
+                  "$ref": "#/components/schemas/Chance"
+                }
+              }
+            }
+          }
+      }
+  },
+  "paths": {
+      "/chance/list": {
+          "get": {
+              "tags": ["Chance"],
+              "summary": "搜索职位",
+              "description": "搜索职位",
+              "parameters": [
+                {
+                  "in": "query", 
+                  "name": "paging.count", 
+                  "schema": {
+                    "title": "翻页大小", 
+                    "type": "integer"
+                  }, 
+                  "default": 10,
+                  "example": 10,
+                  "description": "paging.count 为完整参数名，不要分割",
+                  "required": true
+                },
+                {
+                  "in": "query", 
+                  "name": "paging.direction", 
+                  "schema": {
+                    "title": "翻页大小", 
+                    "type": "string"
+                  }, 
+                  "default": "DOWN",
+                  "example": "DOWN",
+                  "description": "paging.direction 为完整参数名，不要分割, 默认值为 DOWN",
+                  "required": true
+                },
+                {
+                  "in": "query", 
+                  "name": "job", 
+                  "schema": {
+                    "title": "职位名称", 
+                    "type": "string"
+                  }, 
+                  "required": true
+                }
+              ],
+              "responses": {
+                  "200": {
+                      "description": "职位搜索结果",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                "$ref": "#/components/schemas/ChangeResponse",
+                                "title": "ChangeResponse"
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

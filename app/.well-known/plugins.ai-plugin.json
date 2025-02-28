@@ -1,0 +1,25 @@
+{
+  "schema_version": "v1", 
+  "name_for_model": "Jaguar招聘平台", 
+  "name_for_human": "Jaguar招聘平台", 
+  "description_for_model": "用于搜索职位.", 
+  "description_for_human": "用于搜索职位", 
+  "auth": {
+    "type": "oauth", 
+    "instructions": "", 
+    "client_url": "http://localhost:5005/oauth/authorize/", 
+    "scope": "openid", 
+    "authorization_url": "http://localhost:5005/oauth/token/", 
+    "authorization_content_type": "application/x-www-form-urlencoded", 
+    "verification_tokens": {
+      "openai": "34eb375ae893403d8d5f110b544a7365"
+    }
+  }, 
+  "api": {
+    "type": "openapi", 
+    "url": "http://localhost:5005/.well-known/plugins.openapi.json", 
+    "has_user_authentication": true
+  }, 
+  "logo_url": "https://cdn.zappy.app/84fd584633b5b59cd8aceeda0baf81ca.png", 
+  "contact_email": "nla@openbot.com"
+}

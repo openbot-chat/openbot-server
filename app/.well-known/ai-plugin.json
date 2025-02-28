@@ -1,0 +1,22 @@
+{
+  "schema_version": "v1", 
+  "name_for_model": "UIM", 
+  "name_for_human": "UIM", 
+  "description_for_model": "Assistant use UIM to send, receive message to any instant message system such as whatsapp, 微信, 企业微信", 
+  "description_for_human": "UIM一款聚合聊天系统. 可以发送消息给 微信, 企业微信", 
+  "auth": {
+    "type": "user_http", 
+    "authorization_type": "bearer", 
+    "verification_tokens": {
+      "openai": "34eb375ae893403d8d5f110b544a7365"
+    }
+  },
+  "api": {
+    "type": "openapi", 
+    "url": "http://127.0.0.1:5005/.well-known/openapi.json", 
+    "has_user_authentication": true
+  }, 
+  "logo_url": "https://cdn.zappy.app/84fd584633b5b59cd8aceeda0baf81ca.png", 
+  "contact_email": "nla@uimkit.com", 
+  "legal_info_url": "https://uimkit.chat/legal"
+}

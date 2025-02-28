@@ -1,0 +1,56 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+      "version": "1.0.0",
+      "title": "RESTful API for UIM",
+      "description": "RESTful API for UIM"
+  },
+  "servers": [
+      {
+          "description": "Production Server",
+          "url": "https://api.uimkit.chat/admin/v1"
+      }
+  ],
+  "components": {
+      "schemas": {
+          "Account": {
+              "properties": {
+                  "id": {
+                      "type": "string",
+                      "example": "se62812567890",
+                      "description": "ID"
+                  },
+                  "nickname": {
+                      "type": "string",
+                      "example": "Tom",
+                      "description": "账号昵称"
+                  }
+              }
+          }
+      }
+  },
+  "paths": {
+      "/im_accounts": {
+          "get": {
+              "tags": ["账号"],
+              "summary": "获取账号列表",
+              "description": "获取账号列表",
+              "responses": {
+                  "200": {
+                      "description": "账号列表",
+                      "content": {
+                          "application/json": {
+                              "schema": {
+                                "type": "array",
+                                "items": {
+                                  "$ref": "#/components/schemas/Account"
+                                }
+                              }
+                          }
+                      }
+                  }
+              }
+          }
+      }
+  }
+}

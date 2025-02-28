@@ -1,0 +1,269 @@
+[
+  {
+    "slug": "FREE",
+    "name": "Free",
+    "prices": [],
+    "features": [
+      {
+        "slug": "num_of_agents",
+        "name": "Agents",
+        "description": "1 agents included",
+        "type": "QUOTA",
+        "quantity": 1
+      },
+      {
+        "slug": "num_of_dialogue_chat_tokens",
+        "name": "Dialogue（gpt3.5-4k）",
+        "description": "100K chat tokens/month",
+        "type": "QUOTA",
+        "quantity": 100000
+      },
+      {
+        "slug": "num_of_voice_speech_words",
+        "name": "Voice Speech",
+        "description": "1K words voice speech/month",
+        "type": "QUOTA",
+        "quantity": 1000
+      },
+      {
+        "slug": "marketplace",
+        "name": "Openbot Marketplace",
+        "type": "LOCK"
+      },
+      {
+        "slug": "num_of_datastores",
+        "name": "Datastores",
+        "description": "1 datastores included",
+        "type": "QUOTA",
+        "quantity": 1
+      },
+      {
+        "slug": "volume_of_vector_data_storage",
+        "name": "Vector Data Storage",
+        "description": "10MB vector data storage included",
+        "type": "QUOTA",
+        "quantity": 10
+      }
+    ]
+  },
+  {
+    "slug": "STARTER",
+    "name": "Starter",
+    "prices": [
+      {
+        "currency": "usd",
+        "nickname": "$9/month",
+        "unit_amount": 900,
+        "price_id": "price_hSsGfNGjv7f9s1ZOzeu7N",
+        "is_yearly": false
+      },
+      {
+        "currency": "usd",
+        "nickname": "$89/year",
+        "unit_amount": 8900,
+        "price_id": "price_97fQoEtH2klir9dypRwlI",
+        "is_yearly": true
+      }
+    ],
+    "features": [
+      {
+        "slug": "num_of_agents",
+        "name": "Agents",
+        "description": "1 agents included",
+        "type": "QUOTA",
+        "quantity": 1
+      },
+      {
+        "slug": "num_of_dialogue_chat_tokens",
+        "name": "Dialogue（gpt3.5-4k）",
+        "description": "1M chat tokens/month",
+        "type": "QUOTA",
+        "quantity": 1000000
+      },
+      {
+        "slug": "num_of_voice_speech_words",
+        "name": "Voice Speech",
+        "description": "10K words voice speech/month",
+        "type": "QUOTA",
+        "quantity": 10000
+      },
+      {
+        "slug": "standard_voice_speech",
+        "name": "Standard Voice",
+        "type": "LOCK"
+      },
+      {
+        "slug": "marketplace",
+        "name": "Openbot Marketplace",
+        "type": "LOCK"
+      },
+      {
+        "slug": "num_of_datastores",
+        "name": "Datastores",
+        "description": "1 datastores included",
+        "type": "QUOTA",
+        "quantity": 1
+      },
+      {
+        "slug": "volume_of_vector_data_storage",
+        "name": "Vector Data Storage",
+        "description": "50MB vector data storage included",
+        "type": "QUOTA",
+        "quantity": 50
+      }
+    ]
+  },
+  {
+    "slug": "PRO",
+    "name": "Pro",
+    "prices": [
+      {
+        "currency": "usd",
+        "nickname": "$29/month",
+        "unit_amount": 2900,
+        "price_id": "price__OdX0I8QvGJNfF5xpaHRx",
+        "is_yearly": false
+      },
+      {
+        "currency": "usd",
+        "nickname": "$289/year",
+        "unit_amount": 28900,
+        "price_id": "price__IMBYxj9K_ho4XoVtmtp5",
+        "is_yearly": true
+      }
+    ],
+    "features": [
+      {
+        "slug": "num_of_agents",
+        "name": "Agents",
+        "description": "5 agents included",
+        "type": "QUOTA",
+        "quantity": 5
+      },
+      {
+        "slug": "num_of_dialogue_chat_tokens",
+        "name": "Dialogue（gpt3.5-4k）",
+        "description": "3M chat tokens/month",
+        "type": "QUOTA",
+        "quantity": 3000000
+      },
+      {
+        "slug": "num_of_voice_speech_words",
+        "name": "Voice Speech",
+        "description": "100K words voice speech/month",
+        "type": "QUOTA",
+        "quantity": 100000
+      },
+      {
+        "slug": "standard_voice_speech",
+        "name": "Standard Voice",
+        "type": "LOCK"
+      },
+      {
+        "slug": "marketplace",
+        "name": "Openbot Marketplace",
+        "type": "LOCK"
+      },
+      {
+        "slug": "num_of_datastores",
+        "name": "Datastores",
+        "description": "10 datastores included",
+        "type": "QUOTA",
+        "quantity": 10
+      },
+      {
+        "slug": "volume_of_vector_data_storage",
+        "name": "Vector Data Storage",
+        "description": "300MB vector data storage included",
+        "type": "QUOTA",
+        "quantity": 300
+      }
+    ]
+  },
+  {
+    "slug": "ENTERPRISE",
+    "name": "Enterprise Standard",
+    "prices": [
+      {
+        "currency": "usd",
+        "nickname": "$199/month",
+        "unit_amount": 19900,
+        "price_id": "price_JzxN1QE_4mPAJuaPOEUpx",
+        "is_yearly": false
+      },
+      {
+        "currency": "usd",
+        "nickname": "$1999/year",
+        "unit_amount": 199900,
+        "price_id": "price_YDhXcxiqfs80_wjEHJrxD",
+        "is_yearly": true
+      }
+    ],
+    "features": [
+      {
+        "slug": "num_of_agents",
+        "name": "Agents",
+        "description": "50 agents included",
+        "type": "QUOTA",
+        "quantity": 50
+      },
+      {
+        "slug": "num_of_dialogue_chat_tokens",
+        "name": "Dialogue（gpt3.5-4k）",
+        "description": "20M chat tokens/month",
+        "type": "QUOTA",
+        "quantity": 20000000
+      },
+      {
+        "slug": "dialogue_use_own_llm_key",
+        "name": "Set your own LLM key (unlimited chats)",
+        "type": "LOCK"
+      },
+      {
+        "slug": "num_of_voice_speech_words",
+        "name": "Voice Speech",
+        "description": "1M words voice speech/month",
+        "type": "QUOTA",
+        "quantity": 1000000
+      },
+      {
+        "slug": "standard_voice_speech",
+        "name": "Voice Speech",
+        "type": "LOCK",
+        "description": "Standard Voice"
+      },
+      {
+        "slug": "custom_cloned_voice_speech",
+        "name": "Voice Speech",
+        "type": "LOCK",
+        "description": "Custom Cloned Voice"
+      },
+      {
+        "slug": "hf_voice_speech",
+        "name": "Voice Speech",
+        "description": "HF voice clone*1",
+        "type": "QUOTA",
+        "quantity": 1
+      },
+      {
+        "slug": "marketplace",
+        "name": "Openbot Marketplace",
+        "type": "LOCK"
+      },
+      {
+        "slug": "num_of_datastores",
+        "name": "Datastores",
+        "description": "unlimited datastores",
+        "type": "QUOTA",
+        "quantity": "inf"
+      },
+      {
+        "slug": "volume_of_vector_data_storage",
+        "name": "Vector Data Storage",
+        "description": "4GB vector data storage included",
+        "type": "QUOTA",
+        "quantity": 4096
+      }
+    ]
+  }
+]
