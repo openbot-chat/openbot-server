@@ -20,7 +20,7 @@ services:
     image: dpage/pgadmin4:7.6
     environment:
       TZ: Asia/Shanghai
-      PGADMIN_DEFAULT_EMAIL: api@openbot.cn
+      PGADMIN_DEFAULT_EMAIL: api@openbot.chat
       PGADMIN_DEFAULT_PASSWORD: 123456
     ports:
       - '5050:80'
