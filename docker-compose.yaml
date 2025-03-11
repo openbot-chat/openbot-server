@@ -1,0 +1,40 @@
+version: "3.3"
+
+services:
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+  postgres:
+    image: postgres:15.4
+    volumes:
+      - db_data1:/var/lib/postgresql/data
+    environment:
+      - TZ=Asia/Shanghai
+      - POSTGRES_PASSWORD=openbot
+      - POSTGRES_DB=llm
+    ports:
+      - "5434:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4:7.6
+    environment:
+      TZ: Asia/Shanghai
+      PGADMIN_DEFAULT_EMAIL: api@openbot.chat
+      PGADMIN_DEFAULT_PASSWORD: 123456
+    ports:
+      - '5050:80'
+    depends_on:
+      - postgres
+
+  qdrant:
+    image: qdrant/qdrant:v1.1.1
+    ports:
+      - '6333:6333'
+      - '6334:6334'
+    volumes:
+      - '/Users/Shared/qdrant:/qdrant/storage'
+
+
+volumes:
+  db_data1:

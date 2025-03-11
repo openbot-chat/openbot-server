@@ -1,0 +1,36 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DATABASE_URL=postgresql+asyncpg://root:openbot@localhost:5432/llm
+    ports:
+      - "8001:8080"
+  worker:
+    build: .
+    depends_on:
+      - redis
+    command: "poetry run celery -A tasks.celery_worker worker -l info -Q tasks-load-datasource"
+  postgres:
+    image: postgres:13
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=openbot
+      - POSTGRES_DB=llm
+    ports:
+      - "5434:5432"
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      PGADMIN_DEFAULT_EMAIL: api@openbot.chat
+      PGADMIN_DEFAULT_PASSWORD: 123456
+    ports:
+      - '5050:80'
+    depends_on:
+      - postgres
+
+volumes:
+  db_data:
