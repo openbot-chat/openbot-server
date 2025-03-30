@@ -35,11 +35,11 @@ OpenBot is an ​open-source AI agent development platform that combines low-cod
 
 **4. Multi-Channel Publishing**
 - ​**Embedded Web Integration**
-  - Support seamless embedding via `<iframe>` or custom Web Components for third-party platforms (e.g., Shopify stores, CMS systems)[2].
-  - Provide API endpoints for dynamic content injection (e.g., real-time chat widgets for customer service)[3].
+  - Support seamless embedding via `<iframe>` or custom Web Components for third-party platforms (e.g., Shopify stores, CMS systems).
+  - Provide API endpoints for dynamic content injection (e.g., real-time chat widgets for customer service).
 
 - ​**Standalone H5/Web Applications**
-  - Generate white-label web apps with custom domains and branding, optimized for mobile-first experiences[3].
+  - Generate white-label web apps with custom domains and branding, optimized for mobile-first experiences.
   - Integrated with Volcano Engine's CDN for global acceleration (latency <50ms in Tier-1 cities).
 
 - ​**Chatbot Ecosystem Integration**
