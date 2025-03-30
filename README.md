@@ -10,7 +10,7 @@
   <a href="[docs_link]"><img src="[docs_badge]" alt="Documentation"></a>
 </p>
 
-Openbot is a powerful AI Agent platform that provides REST API interfaces for seamless agent integration and management.
+OpenBot is an ​open-source AI agent development platform that combines low-code agility with professional-grade AI engineering capabilities. By integrating ​visual agent orchestration, ​multimodal model management, and ​enterprise-ready RAG pipelines.
 
 ## Features
 
