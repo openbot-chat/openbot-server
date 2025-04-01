@@ -58,8 +58,8 @@ OpenBot is an ​open-source AI agent development platform that combines low-cod
 | ​**WeChat Bot**   | - Official Account API integration<br>- Mini-program interoperability with OpenBot workflows |
 | ​**Twitter/X**    | - Auto-post AI-generated threads<br>- Direct Message-based agent interaction                 |
 | ​**WhatsApp**     | - Twilio API bridge for business verification<br>- Multi-language template messaging        |
-| ​**DingTalk**   | - Enterprise-level API integration for workflow automation[1]<br>- Support OA message templates and approval process triggers |
-| ​**Lark**       | - Interactive card message builder with OpenBot data binding[1](@ref)<br>- Real-time collaboration space integration |
+| ​**DingTalk**   | - Enterprise-level API integration for workflow automation<br>- Support OA message templates and approval process triggers |
+| ​**Lark**       | - Interactive card message builder with OpenBot data binding<br>- Real-time collaboration space integration |
 
 
 ## Quick Start
