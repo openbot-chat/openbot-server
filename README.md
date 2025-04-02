@@ -1,7 +1,7 @@
 # Openbot API Server
 
 <p align="center">
-  <img src="[logo_path]" alt="Openbot Logo" width="200"/>
+  <img src="/images/logo.png" alt="Openbot Logo" width="200"/>
 </p>
 
 <p align="center">
