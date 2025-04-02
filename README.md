@@ -138,6 +138,17 @@ docker build -f celery.Dockerfile -t openbot-celery-worker .
 </a>
 
 
+<br/>
+<br/>
+
+**Community**
+
+This project has been integrated into the **FAIR³ Community's Open Source Ecosystem Initiative**
+
+<p align="center">
+  <img src="/images/fair3.jpg" alt="FAIR³" width="300"/>
+</p>
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
